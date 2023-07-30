@@ -25,10 +25,10 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/" wire:navigate>Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Me</a>
+                    <a class="nav-link" href="/about" wire:navigate>Me</a>
                   </li>
 
                 </ul>
@@ -40,7 +40,7 @@
             <div class="row ">
                 <div class="col d-flex justify-content-center mt-4">
 
-                   @livewire('todo')
+                   {{$slot}}
 
                 </div>
             </div>
